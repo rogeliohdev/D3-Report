@@ -238,12 +238,13 @@
 
         // Crear tarjetas de estadísticas
         function createStatsCards() {
-            const stats = [
-                { label: 'Ventas Totales', value: '$328K', icon: '💰' },
-                { label: 'Usuarios Activos', value: '8.2K', icon: '👥' },
-                { label: 'Productos', value: '1,247', icon: '📦' },
-                { label: 'Conversión', value: '3.2%', icon: '📈' }
-            ];
+            /* ───── Tarjetas de la actividad ──── */
+const stats = [
+  { label: 'Visualizaciones', value: '5', icon: '📈' },
+  { label: 'Archivos CSV',     value: '1', icon: '🗂️' },
+  { label: 'Horas Restantes',  value: '--', icon: '⏳' }, // cámbialo tú
+  { label: 'Autor',            value: 'Rogelio', icon: '🧑‍💻' },
+];
 
             const statsContainer = d3.select('#stats');
             
