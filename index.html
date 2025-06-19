@@ -182,22 +182,35 @@
         <div class="stats-grid" id="stats"></div>
 
         <div class="charts-grid">
-            <div class="chart-container">
-                <div class="chart-title">📈 Ventas por Mes</div>
-                <div id="barChart"></div>
-            </div>
+            <!--  █  INICIO NUEVOS CONTENEDORES  █ -->
+  <div class="chart-container">
+    <div class="chart-title">📍 Coordenadas del Mouse</div>
+    <svg id="coords" width="300" height="300"></svg>
+  </div>
 
-            <div class="chart-container">
-                <div class="chart-title">🥧 Distribución por Categoría</div>
-                <div id="pieChart"></div>
-            </div>
-
-            <div class="chart-container full-width">
-                <div class="chart-title">📊 Tendencia de Usuarios</div>
-                <div id="lineChart"></div>
-            </div>
-        </div>
+  <div class="chart-container">
+    <div class="chart-title">🖌️ Brush Interactivo (dense.csv)</div>
+    <div style="display:flex;gap:10px">
+      <svg id="brush1" width="300" height="300"></svg>
+      <svg id="brush2" width="300" height="300"></svg>
     </div>
+  </div>
+
+  <div class="chart-container">
+    <div class="chart-title">🎯 Arrastra las Bolas</div>
+    <svg id="dragdrop" width="600" height="200"></svg>
+  </div>
+
+  <div class="chart-container">
+    <div class="chart-title">🔄 Stagger Bars (clic)</div>
+    <svg id="stagger" width="600" height="300"></svg>
+  </div>
+
+  <div class="chart-container">
+    <div class="chart-title">🌀 Curva de Lissajous</div>
+    <svg id="lissajous" width="300" height="300"></svg>
+  </div>
+  <!--  █  FIN NUEVOS CONTENEDORES  █ -->
 
     <div class="tooltip" id="tooltip"></div>
 
